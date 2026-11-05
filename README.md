@@ -102,3 +102,20 @@ La API se probó con Thunder Client: GET lista, GET por id (200 y 404), POST (20
 ## Autor
 
 Steven Huamanlazo Pariona - Ingeniería de Sistemas - UNCP
+
+## Demo en linea (GitHub Pages)
+
+Demo estatica de la interfaz, publicada con GitHub Pages desde la carpeta `/docs`:
+
+**https://stevenhuamanlazo.github.io/DAW_PRACTICA_SEM10/**
+
+> GitHub Pages solo aloja archivos estaticos (no ejecuta Node.js ni MySQL). Por eso la demo
+> simula la API REST en el navegador (`docs/demo-api.js`) con los datos reales exportados de la
+> base de datos (`docs/demo-data.json`). Los cambios hechos en la demo no se guardan.
+> La version completa (Express + MySQL) se ejecuta en local con `npm run dev`.
+
+### Como se publico
+
+1. Se copio la interfaz de `public/` a `docs/` y se agrego `docs/demo-api.js` (API simulada).
+2. En GitHub: Settings -> Pages -> Source: Deploy from a branch -> Branch `main` y carpeta `/docs`.
+3. GitHub genera la URL publica de arriba en 1 o 2 minutos.
