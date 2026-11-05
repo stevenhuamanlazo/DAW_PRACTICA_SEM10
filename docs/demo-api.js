@@ -14,7 +14,6 @@
     return new Response(JSON.stringify(body), { status: status, headers: { 'Content-Type': 'application/json' } });
   }
   function vacio(v) { return v === undefined || v === null || String(v).trim() === ''; }
-
   window.fetch = function (url, opts) {
     var u = String(url);
     if (u.indexOf('/api/productos') !== 0) return realFetch(url, opts);

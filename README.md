@@ -119,3 +119,20 @@ Demo estatica de la interfaz, publicada con GitHub Pages desde la carpeta `/docs
 1. Se copio la interfaz de `public/` a `docs/` y se agrego `docs/demo-api.js` (API simulada).
 2. En GitHub: Settings -> Pages -> Source: Deploy from a branch -> Branch `main` y carpeta `/docs`.
 3. GitHub genera la URL publica de arriba en 1 o 2 minutos.
+
+## Demo en linea (GitHub Pages)
+
+Demo estatica de la interfaz, publicada con GitHub Pages desde la carpeta `/docs`:
+
+**https://stevenhuamanlazo.github.io/DAW_PRACTICA_SEM10/**
+
+> GitHub Pages solo aloja archivos estaticos (no ejecuta Node.js ni MySQL). Por eso la demo
+> simula la API REST en el navegador (`docs/demo-api.js`) con los datos reales exportados de la
+> base de datos (`docs/demo-data.json`). Los cambios hechos en la demo no se guardan.
+> La version completa (Express + MySQL) se ejecuta en local con `npm run dev`.
+
+### Como se publico
+
+1. Se copio la interfaz de `public/` a `docs/` y se agrego `docs/demo-api.js` (API simulada).
+2. En GitHub: Settings -> Pages -> Source: GitHub Actions, con el workflow `.github/workflows/static.yml` publicando la carpeta `docs`.
+3. Cada push a `main` vuelve a desplegar la pagina automaticamente.
