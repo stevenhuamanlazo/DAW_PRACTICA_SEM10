@@ -101,4 +101,4 @@ La API se probó con Thunder Client: GET lista, GET por id (200 y 404), POST (20
 
 ## Autor
 
-Steven Huaman Lazo - Ingeniería de Sistemas - UNCP
+Steven Huamanlazo Pariona - Ingeniería de Sistemas - UNCP
